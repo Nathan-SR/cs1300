@@ -7,6 +7,7 @@
 
 .images-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -15,17 +16,37 @@
 
 .section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 400px;
     width: 100%;
 }
 
+.google-section {
+    background-color: #657dba; 
+}
+
+.amazon-section {
+    background-color: #5169a5; 
+}
+
+.discord-section {
+    background-color: #3c5082; 
+}
+
 .image-box {
-    width: 300px;
-    height: 300px;
-    border: 2px solid #000;
-    border-radius: 10px;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    height: 350px;
+    overflow-y: scroll;
+}
+
+.image-item {
+    height: 300px;
+    width: 100%;
+    object-fit: scale-down;
 }
