@@ -31,18 +31,7 @@
     padding: 20px;
     height: 100%;
     width: 100%;
-}
-
-.google-section {
-    background-color: #b9c6e7; 
-}
-
-.amazon-section {
-    background-color: #b9c6e7; 
-}
-
-.discord-section {
-    background-color: #b9c6e7; 
+    background-color: #e5ebf9; 
 }
 
 .image-box {
@@ -53,15 +42,13 @@
     padding: 15px;
     padding-top: 0px;
     gap: 20px;
-    height: 350px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
 }
 
 .image-item {
-    height: 300px;
+    height: 275px;
     width: 100%;
-    object-fit: scale-down;
 }
 
 .img-border {
