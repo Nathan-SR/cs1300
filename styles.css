@@ -32,11 +32,11 @@
 }
 
 .google-section {
-    background-color: #657dba; 
+    background-color: #5169a5; 
 }
 
 .amazon-section {
-    background-color: #5169a5; 
+    background-color: #657dba; 
 }
 
 .discord-section {
@@ -47,11 +47,14 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 20px;
+    margin-top: 0px;
     align-items: center;
     position: relative;
     padding: 15px;
+    padding-top: 0px;
     gap: 20px;
-    height: 340px;
+    height: 350px;
     overflow-x: scroll;
 }
 
