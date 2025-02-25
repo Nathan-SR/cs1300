@@ -1,48 +1,88 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="styles.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<div>
-  <header class="main-header">
-    <h1>Accessible Components</h1>
-    <h3>Accessible components are those that are designed with the needs of as many users as possible in mind. This includes keyboard navigation, screen reader support, and other accessibility features.</p>
-  </header>
-  <intro class="secondary-header">
-    <h2>Introduction</h2>
-    <p>I looked at search bar suggestion dropdown menus from Google, Discord, and Amazon to assess their useability and accessibility.</p>
-  </intro>
-  <body>
+<body>
+  <div>
+    <header class="main-header">
+      <h1>Accessible Components</h1>
+      <h3>Accessible components are those that are designed with the needs of as many users as possible in mind. This includes keyboard navigation, screen reader support, and other accessibility features.</h3>
+    </header>
+    <div class="secondary-header">
+      <h2>Introduction</h2>
+      <p>I looked at search bar suggestion dropdown menus from Google, Discord, and Amazon to assess their usability and accessibility.</p>
+    </div>
     <div class="images-section">
       <div class="images-container">
-        <div class="sect amazon-section">
+        <div class="sect google-section">
           <h2>Google</h2>
-          <div class="image-box">
-            <img src="Accessible Components\google_mouse_hover.png" alt="Placeholder Image 1" class="image-item">
-            <img src="Accessible Components\google_hover_and_keyboard.png" alt="Placeholder Image 2" class="image-item">
-            <img src="Accessible Components\google_tab_hover.png" alt="Placeholder Image 3" class="image-item">
-            <img src="Accessible Components\google_tab_on_delete.png" alt="Placeholder Image 4" class="image-item">
+          <div class="carousel">
+            <div class="carousel-item">
+              <figure>
+                <img src="Accessible Components/google_mouse_hover.png" alt="Google Mouse Hover" class="image-item">
+                <figcaption>Google Mouse Hover</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure>
+                <img src="Accessible Components/google_hover_and_keyboard.png" alt="Google Hover and Keyboard" class="image-item">
+                <figcaption>Google Hover and Keyboard</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure>
+                <img src="Accessible Components/google_tab_hover.png" alt="Google Tab Hover" class="image-item">
+                <figcaption>Google Tab Hover</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure>
+                <img src="Accessible Components/google_tab_on_delete.png" alt="Google Tab on Delete" class="image-item">
+                <figcaption>Google Tab on Delete</figcaption>
+              </figure>
+            </div>
           </div>
         </div>
-        <div class="sect google-section">
+        <div class="sect amazon-section">
           <h2>Amazon</h2>
-          <div class="image-box">
-            <img src="Accessible Components\amazon_hovered.png" alt="Placeholder Image 7" class="image-item">
-            <img src="Accessible Components\zon_unhovered.png" alt="Placeholder Image 8" class="image-item">
+          <div class="carousel">
+            <div class="carousel-item">
+              <figure>
+                <img src="Accessible Components/amazon_hovered.png" alt="Amazon Hovered" class="image-item">
+                <figcaption>Amazon Hovered</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure>
+                <img src="Accessible Components/zon_unhovered.png" alt="Zon Unhovered" class="image-item">
+                <figcaption>Zon Unhovered</figcaption>
+              </figure>
+            </div>
           </div>
         </div>
         <div class="sect discord-section">
           <h2>Discord</h2>
-          <div class="image-box">
-            <img src="Accessible Components\discord_uninteracted.png" alt="Placeholder Image 5" class="image-item">
-            <img src="Accessible Components\discord_keyboard_and_mouse.png" alt="Placeholder Image 6" class="image-item">
+          <div class="carousel">
+            <div class="carousel-item">
+              <figure>
+                <img src="Accessible Components/discord_uninteracted.png" alt="Discord Uninteracted" class="image-item">
+                <figcaption>Discord Uninteracted</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure>
+                <img src="Accessible Components/discord_keyboard_and_mouse.png" alt="Discord Keyboard and Mouse" class="image-item">
+                <figcaption>Discord Keyboard and Mouse</figcaption>
+              </figure>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
-</div>
+  </div>
+</body>
+</html>
