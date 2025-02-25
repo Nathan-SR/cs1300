@@ -1,67 +1,65 @@
 .main-header {
-    background-color: #a8b9e3;
-    color: #000;
+    background-color: #a8b9e3; 
+    color: rgb(0, 0, 0);
     padding: 15px;
     text-align: center;
-  }
-  .secondary-header {
-    background-color: #8796be;
-    color: #000;
+}
+
+.secondary-header {
+    background-color: #8796be; 
+    color: rgb(0, 0, 0);
     padding: 15px;
     text-align: center;
-  }
-  .images-container {
+}
+
+.images-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
-  }
-  .sect {
+}
+
+.sect {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    height: 100%;
     width: 100%;
-  }
-  .google-section {
-    background-color: #5169a5;
-  }
-  .amazon-section {
-    background-color: #657dba;
-  }
-  .discord-section {
-    background-color: #3c5082;
-  }
-  .carousel {
+}
+
+.google-section {
+    background-color: #5169a5; 
+}
+
+.amazon-section {
+    background-color: #657dba; 
+}
+
+.discord-section {
+    background-color: #3c5082; 
+}
+
+.image-box {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    padding: 15px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-  }
-  .carousel-item {
-    flex: none;
-    scroll-snap-align: center;
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    margin-top: 0px;
     align-items: center;
-  }
-  .image-item {
+    position: relative;
+    padding: 15px;
+    padding-top: 0px;
+    gap: 20px;
+    height: 350px;
+    overflow-x: scroll;
+}
+
+.image-item {
     height: 300px;
-    width: auto;
-    max-width: 100%;
+    width: 100%;
     object-fit: scale-down;
-  }
-  figure {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  figcaption {
-    margin-top: 10px;
-    color: #fff;
-  }
-  
+}
