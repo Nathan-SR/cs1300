@@ -51,6 +51,13 @@
     width: 100%;
 }
 
+.feature-image {
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .img-border {
     border: 5px solid #323456;
     border-radius: 10px;
@@ -75,6 +82,7 @@
 }
 
 .tables-container {
+    background-color: #e5ebf9; 
     display: flex;
     gap: 40px;
     justify-content: center;
