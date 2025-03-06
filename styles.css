@@ -109,3 +109,41 @@
     padding: 8px;
     text-align: left;
   }
+
+
+
+
+.question-sidescroll {
+    width: 100%;
+    height: 100%;
+    background-color: #ba917f; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 50px;
+    overflow: auto;
+    padding: 20px;
+}
+
+.question-container {
+    width: 100%;
+    height: 100%;
+    background-color: #d9b8aa; 
+    display: flex;
+    flex-direction: column;
+}
+
+.question {
+    display: flex;
+    background-color: #b9f3eb; 
+    flex-grow: .5;
+    padding: 10px;
+}
+
+.summary {
+    display: flex;
+    background-color: #80e0d2; 
+    flex-grow: .5;
+    padding: 10px;
+}
