@@ -121,16 +121,17 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    row-gap: 50px;
-    overflow: auto;
+    gap: 20px;
+    overflow: scroll;
     padding: 20px;
 }
 
 .question-container {
-    width: 100%;
+    width: 200px;
     height: 100%;
     background-color: #d9b8aa; 
     display: flex;
+    flex: none;
     flex-direction: column;
 }
 
