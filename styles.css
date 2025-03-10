@@ -5,6 +5,8 @@
     padding: 10px;
     box-shadow: 5px 5px rgb(95, 63, 53);
     border-radius: 10px;
+    background-color: #b1d6d0;
+    width: 75%;
 }
 
 .section-description {
@@ -181,6 +183,10 @@
 }
 
 .large-image {
+    width: 80%;
+}
+
+.img {
     width: 80%;
 }
 
