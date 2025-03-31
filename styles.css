@@ -80,7 +80,7 @@
     padding: 10px;
 }
 
-.question {
+.problem-image {
     display: flex;
     background-color: #b9f3eb; 
     flex-grow: .2;
