@@ -1,0 +1,364 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+#root {
+    height: 100%;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 7.5%;
+    width: 100%;
+    background-color: #28442D;
+}
+
+.topbar-button {
+    display: flex;
+    color: #F4FFD7;
+    font-weight: bold;
+    font-size: large;
+    margin: 1rem;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.topbar-button-text {
+    transform: transform 0.3s ease;
+}
+
+.logo {
+    height: 100%;
+}
+
+.topbar-button-text:hover {
+    transform: scale(1.1);
+    color: #A0D100;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: .9vh;
+    flex-grow: 1;
+}
+
+.menu-area {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 100%;
+}
+
+.menu-topbar {
+    display: flex;
+    flex-direction: row;
+    height: 7.5%;
+}
+
+.scrollable-area {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.menu-contents {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+
+.menu-section-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #C08240;
+}
+
+.menu-section {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 30%));
+    gap: 1rem;
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.menu-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: fit-content;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 250px;
+    height: fit-content;
+    padding: 10px;
+    margin: 10px;
+}
+
+.menu-item-image {
+    width: 100%;
+    aspect-ratio: 1 / .95;
+    border: solid 2px #28442D;
+}
+
+@media (max-width: 565px) {
+    .menu-item-image {
+        width: 50%;
+        margin-bottom: 5px;
+    }
+}
+
+.menu-item-title {
+    width: auto;
+    font-size: x-large;
+    font-weight: 500;
+    margin: 3px;
+    margin-top: 7px;
+    color: #28442D;
+    text-align: center;
+}
+
+.menu-item-description {
+    text-align: center;
+    font-size: medium;
+    color: #43714B;
+}
+
+.menu-item-tags-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+.menu-item-price-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+}
+
+.menu-item-card-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 25px;
+    width: fit-content;
+    border: solid 2px #28442D;
+    margin: 5px;
+    margin-left: 15px;
+    color: #28442D;
+    cursor: pointer;
+}
+
+.menu-item-card-button:hover {
+    color: #A0D100;
+    border: solid 2px #A0D100;
+}
+
+.menu-item-cart-button-text {
+    font-size: small;
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+.menu-item-cart-button-icon {
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+.menu-item-card-button:hover .menu-item-cart-button-icon {
+    filter: brightness(0) saturate(100%) invert(76%) sepia(10%) saturate(5464%) hue-rotate(26deg) brightness(96%) contrast(105%);
+}
+
+.menu-item-price {
+    color: #28442D;
+    margin: 5px;
+    font-size: smaller;
+    margin-right: 15px;
+}
+
+.cart-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    border-left: solid 3px #28442D;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    cursor: pointer;
+}
+
+.menu-topbar-cart-button {
+    display: none;
+}
+
+.menu-topbar-cart-button:hover {
+    filter: brightness(0) saturate(100%) invert(76%) sepia(10%) saturate(5464%) hue-rotate(26deg) brightness(96%) contrast(105%);
+}
+
+.menu-topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .cart-area {
+        display: none;
+    }
+
+    .menu-area {
+        width: 100%;
+    }
+
+    .menu-topbar-cart-button {
+        display: block;
+    }
+}
+
+.cart-area-title {
+    font-size: xx-large;
+    font-weight: 500;
+    color: #28442D;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .cart-area-title {
+        font-size: x-large;
+        font-weight: 450;
+    }
+}
+
+.cart-area-order-button {
+    font-size: x-large;
+    font-weight: 500;
+    height: fit-content;
+    width: fit-content;
+    background-color: #28442D;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 5px;
+    color: #F4FFD7;
+}
+
+.cart-area-order-button:hover {
+    background-color: #3c562e;
+    color: #ebfdae;
+    transform: scale(1.05);
+}
+
+.menu-section-description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    text-align: center;
+    color: #28442D;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+.menu-topbar-dropdown {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #8a5823;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.menu-topbar-dropdown:hover { 
+    color: #C08240;
+}
+
+.menu-icon {
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+.icon-wrapper .menu-icon {
+    height: 30px;
+    aspect-ratio: 1/1;
+    margin-top: 5px;
+}
+
+.small {
+    height: 35%;
+}
+
+.tooltip {
+    width: max-content;
+    background-color: black;
+    color: #000000;
+    text-align: center;
+    border-radius: 4px;
+    padding: 4px 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+}
+
+.icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: fit-content;
+}
+
+.icon-desc {
+    margin-right: 10px;
+}
