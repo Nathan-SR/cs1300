@@ -46,7 +46,7 @@ body {
     width: 66vw;
     aspect-ratio: 1/1;
     animation: bob 4s ease-in-out infinite;
-    
+
     left: 5.5vw;
     align-items: flex-end;
 }
@@ -252,7 +252,7 @@ body {
 }
 
 .portals-wrapper.zero {
-    left: -10vw;
+    left: -3vw;
     top: 12.5vw;
     width: 5vw;
     height: 5vw;
@@ -264,7 +264,7 @@ body {
 }
 
 .portals-wrapper.one {
-    left: -7.5vw;
+    left: -.5vw;
     bottom: -3vw;
     width: 7vw;
     height: 7vw;
@@ -276,7 +276,7 @@ body {
 }
 
 .portals-wrapper.three {
-    left: 13.5vw;
+    left: 20.5vw;
     bottom: -5.5vw;
     width: 13vw;
     height: 13vw;
@@ -290,7 +290,7 @@ body {
 .portals-wrapper.four {
     width: 5.5vw;
     height: 5.5vw;
-    left: 16.5vw;
+    left: 23.5vw;
     bottom: -5.5vw;
 }
 
@@ -302,7 +302,7 @@ body {
 .portals-wrapper.five {
     width: 7vw;
     height: 7vw;
-    left: 14.5vw;
+    left: 21.5vw;
     top: 14vw;
 }
 
@@ -314,7 +314,7 @@ body {
 .portals-wrapper.six {
     width: 4vw;
     height: 4vw;
-    right: 15vw;
+    right: 8vw;
     top: 9vw;
 }
 
@@ -327,7 +327,7 @@ body {
 .portals-wrapper.seven {
     width: 7.5vw;
     height: 7.5vw;
-    right: 15vw;
+    right: 8vw;
     top: 45vw;
 }
 
@@ -335,7 +335,7 @@ body {
 .portals-wrapper.eight {
     width: 4vw;
     height: 4vw;
-    right: 28vw;
+    right: 21vw;
     top: 52vw;
 }
 

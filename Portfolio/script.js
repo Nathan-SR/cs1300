@@ -78,7 +78,6 @@ function buildPortalShapes() {
 function handleScroll(e) {
     const scrollY = e.currentTarget.scrollTop;
     const vh20 = 0.2 * innerHeight;
-    const vh60 = 0.6 * innerHeight;
 
     querySelect(".scroll-indicator").style.opacity = `${0.5 - scrollY / 150}`;
     querySelect(".personal-statement-container").style.top = `${-scrollY}px`;
