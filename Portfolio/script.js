@@ -58,7 +58,7 @@ function buildPortalShapes() {
         w.appendChild(circle);
 
         const star = document.createElement("img");
-        star.src = "/Star.png";
+        star.src = "Images/Star.png";
         star.className = `portals-title-star ${id}`;
         const duration = Math.random() * 70 + 30;     
         const reverse = Math.random() < 0.5;
@@ -70,7 +70,7 @@ function buildPortalShapes() {
     });
 
     const middleStar = document.createElement("img");
-    middleStar.src = "/Star.png";
+    middleStar.src = "Images/Star.png";
     middleStar.className = "portals-title-star two";
     parent.appendChild(middleStar);
 }
