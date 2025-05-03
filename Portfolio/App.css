@@ -46,6 +46,7 @@ body {
     width: 66vw;
     aspect-ratio: 1/1;
     animation: bob 4s ease-in-out infinite;
+    
     left: 5.5vw;
     align-items: flex-end;
 }
