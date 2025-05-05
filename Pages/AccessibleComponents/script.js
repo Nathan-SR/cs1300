@@ -34,17 +34,17 @@ function createDecorationCircles() {
 }
 
 document.addEventListener('scroll', (e) => {
-    const scrollY = cont.scrollTop;
+    const scrollY = e.target.scrollTop;
 
-    (document.getElementsByClassName('landing-section')[0]).style.opacity = `${1 - scrollY/150}`;
-    (document.getElementsByClassName('scroll-indicator')[0]).style.opacity = `${.5 - 2 * scrollY/150}`;
+    querySelect('landing-section').style.opacity = `${1 - scrollY/150}`;
+    querySelect('scroll-indicator').style.opacity = `${.5 - 2 * scrollY/150}`;
 
     if (scrollY < .3 * window.innerHeight) {
-        (document.getElementsByClassName('main-page-content')[0]).style.transform = `translate(0px, ${0 - scrollY}px)`;
+        querySelect('main-page-content').style.transform = `translate(0px, ${0 - scrollY}px)`;
     }
 
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    createDecorationCircles()
+    createDecorationCircles();
 })
