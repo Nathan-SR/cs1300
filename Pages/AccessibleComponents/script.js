@@ -8,7 +8,7 @@ function querySelectAll(element) {
 }
 
 function createDecorationCircles() {
-    const textBubbles = this.querySelectAll(".text-bubble")
+    const textBubbles = querySelectAll(".text-bubble")
     let horizMod = 'left';
     let vertMod = 'bottom';
     let colorMod = 'black';
@@ -33,18 +33,20 @@ function createDecorationCircles() {
     })
 }
 
-document.addEventListener('scroll', (e) => {
-    const scrollY = e.target.scrollTop;
-
-    querySelect('landing-section').style.opacity = `${1 - scrollY/150}`;
-    querySelect('scroll-indicator').style.opacity = `${.5 - 2 * scrollY/150}`;
-
-    if (scrollY < .3 * window.innerHeight) {
-        querySelect('main-page-content').style.transform = `translate(0px, ${0 - scrollY}px)`;
-    }
-
-});
-
 document.addEventListener("DOMContentLoaded", () => {
+    const scrollContainer = querySelect('.scrollable-window');
+
+    scrollContainer.addEventListener('scroll', (e) => {
+        const scrollY = e.target.scrollTop;
+    
+        querySelect('.landing-section').style.opacity = `${1 - scrollY/150}`;
+        querySelect('.scroll-indicator').style.opacity = `${.5 - 2 * scrollY/150}`;
+    
+        if (scrollY < .3 * window.innerHeight) {
+            querySelect('.main-page-content').style.transform = `translate(0px, ${0 - scrollY}px)`;
+        }
+    
+    });
+
     createDecorationCircles();
 })
