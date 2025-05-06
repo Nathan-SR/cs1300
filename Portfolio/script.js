@@ -49,7 +49,7 @@ const idToFilter = {
 function buildPortalShapes() {
 
     const parent = querySelect(".pt-circles-parent");
-    
+
     portalIds.forEach(id => {
         const w = document.createElement("div");
         w.className = `portals-wrapper ${id}`;
@@ -79,6 +79,7 @@ function buildPortalShapes() {
 function handleScroll(e) {
     const scrollY = e.currentTarget.scrollTop;
     const vh20 = 0.2 * innerHeight;
+    const scrollThreshold = 0.6 * window.innerHeight;
 
     const circleOpacityStyle = scrollY > scrollThreshold ? 1 - (scrollY - scrollThreshold) / 100 : (scrollY - scrollThreshold / 50) / 1;   
     const starOpacityStyle = scrollY > scrollThreshold ? (-1 + (scrollY - scrollThreshold) / 100) : 0;
@@ -126,8 +127,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     makeRotator(
         querySelect("#rotator‑1"), [
-        { word: "make games ", color: "rgb(107,79,151)", font: "Allerta Stencil" },
-        { word: "create tools ", color: "orange", font: "Aldrich" },
+        { word: "make games ", color: "rgb(107,79,151)", font: "Aldrich" },
+        { word: "create tools ", color: "orange", font: "Allerta Stencil" },
         ], 9000
     );
 
