@@ -11,12 +11,12 @@
 </head>
 <body>
 <div class="screen">
-    <div class="topbar" tabIndex={0}>
+    <div class="topbar">
         Nathan Robbins
         <div class="topbar-menu">
-            <span>Home</span>
-            <span>Resume</span>
-            <span>Contact</span>
+            <span class="menu-opt" onclick="window.location.href='/cs1300/Portfolio/';" tabindex="1">Home</span>
+                <span class="menu-opt" tabindex="2">Resume</span>
+                <span class="menu-opt" tabindex="3">Contact</span>
         </div>
     </div>
     <div class="scrollable-window" id="scrollcont">
@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <div class='scroll-indicator'>
-                    <img class="scroll-indicator-image" src="Images/DownArrow.png"/>
+                    <img class="scroll-indicator-image" src="Images/DownArrow.png" alt="Down arrow indicating more content below"/>
                 </div>
             </div>
             <div class="section-title">
@@ -54,7 +54,7 @@
             <div class="divider large visible"></div>
             <div class="images-panel small">
                 <div class="image-container">
-                    <img class="image" src="Images/searchbars.png"/>
+                    <img class="image" src="Images/searchbars.png" alt="Comparison of search bar designs from multiple websites"/>
                 </div>
             </div>
             <div class="divider large visible"></div>
@@ -67,7 +67,7 @@
             </div>
             <div class='images-panel bubble'>
                 <div class="image-container">
-                    <img class="image" src="Images/googlesearch.png"/>
+                    <img class="image" src="Images/googlesearch.png" alt="Google search dropdown showing suggested queries"/>
                     <div class="image-caption">
                         Google's search bar with suggested results. First result highlighted using tab key; other highlighted using mouse.
                     </div>
@@ -89,7 +89,7 @@
                     </div>
                 </div>
                 <div class="image-container">
-                    <img class="image" src="Images/amazonsearch.png"/>
+                    <img class="image" src="Images/amazonsearch.png" alt="Amazon search dropdown with AI chat suggestion"/>
                     <div class="image-caption">
                         Amazon's search bar with suggested results. Result highlighted using arrow keys.
                     </div>
@@ -97,7 +97,7 @@
             </div>
             <div class='images-panel bubble'>
                 <div class="image-container">
-                    <img class="image" src="Images/discordsearch.png"/>
+                    <img class="image" src="Images/discordsearch.png" alt="Discord search dropdown featuring filter chips"/>
                     <div class="image-caption">
                         Discord's search bar with suggested filter options. Blue highlighted option selected with arrow keys; other one with mouse.
                     </div>
@@ -133,7 +133,7 @@
             <div class='divider'></div>
             <div class='images-panel'>
                 <div class="image-container">
-                    <img class="image" src="Images/component.png"/>
+                    <img class="image" src="Images/component.png" alt="Figma mockup of redesigned search dropdown component"/>
                     <div class="image-caption">
                         Mockup created in Figma
                     </div>

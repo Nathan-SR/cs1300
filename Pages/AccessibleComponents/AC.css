@@ -253,7 +253,9 @@ body {
 .decoration-bubble.top {
     bottom: 67.5%;
 }
-
+.menu-opt {
+    cursor: pointer;
+}
 .decoration-bubble.bottom {
     top: 67.5%;
 }
