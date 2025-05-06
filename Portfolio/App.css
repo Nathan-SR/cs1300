@@ -256,8 +256,8 @@ body {
 }
 
 .portals-wrapper.zero {
-    left: -3vw;
-    top: 12.5vw;
+    left: -10vw;
+    top: 6.5vw;
     width: 5vw;
     height: 5vw;
 }
@@ -268,7 +268,7 @@ body {
 }
 
 .portals-wrapper.one {
-    left: -.5vw;
+    left: -5vw;
     bottom: -3vw;
     width: 7vw;
     height: 7vw;
@@ -280,7 +280,7 @@ body {
 }
 
 .portals-wrapper.three {
-    left: 35.5vw;
+    left: 37.5vw;
     bottom: -5.5vw;
     width: 13vw;
     height: 13vw;
@@ -294,7 +294,7 @@ body {
 .portals-wrapper.four {
     width: 5.5vw;
     height: 5.5vw;
-    left: 38.5vw;
+    left: 40.5vw;
     bottom: -5.5vw;
 }
 
@@ -306,7 +306,7 @@ body {
 .portals-wrapper.five {
     width: 7vw;
     height: 7vw;
-    left: 36.5vw;
+    left: 38.5vw;
     top: 14vw;
 }
 
@@ -318,7 +318,7 @@ body {
 .portals-wrapper.six {
     width: 4vw;
     height: 4vw;
-    right: -4vw;
+    right: 1vw;
     top: 9vw;
 }
 
@@ -374,8 +374,8 @@ body {
 .portals-title-star.two {
     position: relative;
     flex: none;
-    left: -40vw;
-    top: 4vw;
+    left: -45vw;
+    top: 10vw;
     width: 24vw;
     height: 24vw;
     opacity: .5;
