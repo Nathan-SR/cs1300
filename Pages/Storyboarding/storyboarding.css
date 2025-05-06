@@ -221,6 +221,8 @@ body {
     flex: none;
     padding: 4vw;
     padding-left: 2vw;
+    overflow-y: scroll;
+    max-height: 35vh;
 }
 
 .text-bubble {
