@@ -119,18 +119,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     makeRotator(
         querySelect("#rotator‑1"), [
-        { word: "build applications", color: "rgb(107,79,151)", font: "Allerta Stencil" },
-        { word: "design interfaces", color: "orange", font: "Aldrich" },
-        { word: "craft experiences", color: "#4298f5", font: "Kalam" },
+        { word: "make games ", color: "rgb(107,79,151)", font: "Allerta Stencil" },
+        { word: "create tools ", color: "orange", font: "Aldrich" },
         ], 9000
     );
 
     makeRotator(
         querySelect("#rotator‑2"), [
-        { word: "flexibility", color: "#f2aa00", font: "Kalam" },
-        { word: "agency", color: "#9e72a6", font: "Aldrich" },
-        { word: "ideas", color: "#82c267", font: "Marck Script" },
-        { word: "confidence", color: "#00bbe0", font: "Koh Santepheap" },
+        { word: "flexibility ", color: "#f2aa00", font: "Kalam" },
+        { word: "agency ", color: "#9e72a6", font: "Aldrich" },
+        { word: "ideas ", color: "#82c267", font: "Marck Script" },
+        { word: "confidence ", color: "#00bbe0", font: "Koh Santepheap" },
         ], 3000
     );
 
