@@ -19,11 +19,11 @@ function createDecorationCircles() {
             switch (Math.floor(Math.random() * 2)) {
                 case 0:
                     i > 0 ? horizMod = 'left' : vertMod = 'top';
-                    colorMod = 'rgb(100, 250, 230, .3)';
+                    colorMod = 'rgba(137, 203, 221, 0.35)';
                     break;
                 case 1:
                     i > 0 ? horizMod = 'right' : vertMod = 'bottom';
-                    colorMod = 'rgb(245, 115, 240, .3)'
+                    colorMod = 'rgba(205, 144, 215, 0.35)'
                     break;
             }
         }

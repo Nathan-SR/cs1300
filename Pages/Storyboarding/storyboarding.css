@@ -216,13 +216,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     width: 17vw;
     flex: none;
     padding: 4vw;
     padding-left: 2vw;
     overflow-y: scroll;
-    max-height: 35vh;
+    max-height: 45vh;
+    color: rgb(31, 125, 148)
 }
 
 .text-bubble {
@@ -232,7 +233,6 @@ body {
     border-radius: 50%;
     width: 80%;
     height: 80%;
-    background-color: rgba(123, 162, 173, 0.35);
 }
 
 .text-bubble.blue {
@@ -244,7 +244,7 @@ body {
 }
 
 .text-bubble.purple {
-    background-color: rgba(152, 118, 157, 0.35);
+    background-color: rgba(205, 144, 215, 0.35);
 }
 
 .text-bubble-text {

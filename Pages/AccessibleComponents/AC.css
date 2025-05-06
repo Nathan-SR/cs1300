@@ -207,13 +207,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     width: 37vw;
     flex: none;
     padding: 4vw;
     padding-left: 2vw;
     overflow-y: scroll;
-    max-height: 35vh;
+    max-height: 45vh;
 }
 
 .text-bubble {
