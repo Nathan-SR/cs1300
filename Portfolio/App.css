@@ -256,7 +256,7 @@ body {
 }
 
 .portals-wrapper.zero {
-    left: -10vw;
+    left: -14vw;
     top: 6.5vw;
     width: 5vw;
     height: 5vw;
@@ -375,7 +375,7 @@ body {
     position: relative;
     flex: none;
     left: -45vw;
-    top: 10vw;
+    top: 7vw;
     width: 24vw;
     height: 24vw;
     opacity: .5;
