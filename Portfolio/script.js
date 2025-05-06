@@ -49,6 +49,7 @@ const idToFilter = {
 function buildPortalShapes() {
 
     const parent = querySelect(".pt-circles-parent");
+    
     portalIds.forEach(id => {
         const w = document.createElement("div");
         w.className = `portals-wrapper ${id}`;
@@ -78,6 +79,12 @@ function buildPortalShapes() {
 function handleScroll(e) {
     const scrollY = e.currentTarget.scrollTop;
     const vh20 = 0.2 * innerHeight;
+
+    const circleOpacityStyle = scrollY > scrollThreshold ? 1 - (scrollY - scrollThreshold) / 100 : (scrollY - scrollThreshold / 50) / 1;   
+    const starOpacityStyle = scrollY > scrollThreshold ? (-1 + (scrollY - scrollThreshold) / 100) : 0;
+
+    querySelectAll('.portals-title-circle').forEach(c => c.style.opacity = circleOpacityStyle );
+    querySelectAll('.portals-title-star').forEach(s => s.style.opacity = starOpacityStyle );
 
     querySelect(".scroll-indicator").style.opacity = `${0.5 - scrollY / 150}`;
     querySelect(".personal-statement-container").style.top = `${-scrollY}px`;
