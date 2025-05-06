@@ -12,6 +12,10 @@
     gap: 10px;
 }
 
+.menu-opt {
+    cursor: pointer;
+}
+
 body {
     margin: 0;
     padding: 0;

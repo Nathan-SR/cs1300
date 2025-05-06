@@ -287,7 +287,9 @@ body {
 .decoration-bubble.bottom {
     top: 67.5%;
 }
-
+.menu-opt {
+    cursor: pointer;
+}
 .decoration-bubble.left {
     right: 67.5%;
 }
